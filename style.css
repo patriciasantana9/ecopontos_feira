@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
+/* dispositivos móveis */
+
 body { 
     margin: 0px; 
     padding: 0px; 
@@ -81,7 +83,7 @@ header > p {
 article { 
     padding: 16px;
     margin: 0px 0px 24px 0px;
-    height: 66vh; 
+    height: 86vh; 
     box-shadow: 11px 15px 16px 1px #a3a3a314;
     width: 80%;
     display: flex; 
@@ -117,6 +119,14 @@ img {
     width: 100%;
 }
 
+
+.reduzir {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
 footer { 
     background-color: #011F26; 
     height: 80px;
@@ -136,30 +146,41 @@ footer > p {
     text-align: center; 
 }
 
-@media (min-width: 700px) and (max-width: 992px) {
+/* iPads, tablets */
+
+@media (min-width: 481px) and (max-width: 768px) {
     header {
         height: 30vh;
     }
     article {
-      height: 90vh;
+      height: 100vh;
       width: 70%;
     }
 
     section {
-        height: 30%;
+        height: 40%;
     }
 
     a {
-        width: 30%;
+        width: 40%;
     }
 
     img {
         width: 90%;
     }
     
+    
+    .reduzir {
+        height: 80%;
+        width: 90%;
+        object-fit: cover;
+        object-position: left;
+    }
 }
 
-@media (min-width: 993px) and (max-width: 1200px) {
+/* telas pequenas, laptops */
+
+@media (min-width: 769px) and (max-width: 1024px) {
     header {
         height: 30vh;
     }
@@ -169,44 +190,16 @@ footer > p {
     }
 
     article {
-      height: 90vh;
-      width: 70%;
-    }
-    
-    section {
-        height: 30%;
-    }
-    
-    a {
-        width: 30%;
-    }
-
-    img {
-        width: 80%;
-    }
-} 
-
-@media (min-width: 1200px) {
-    header {
-        height: 30vh;
-    }
-
-    header > p {
-        width: 30%;
-    }
-
-    article {
-      height: 100vh;
-      width: 70%;
-    }
-    
-    section {
-        height: 20%;
+        height: 106vh;
         width: 70%;
     }
     
+    section {
+        height: 40%;
+    }
+    
     a {
-        width: 16%;
+        width: 30%;
     }
 
     img {
@@ -215,7 +208,82 @@ footer > p {
 
     .reduzir {
         height: 80%;
-        width: 50%;
+        width: 80%;
+        object-fit: cover;
+        object-position: left;
+    }
+} 
+
+/* desktops, telas grandes */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    header {
+        height: 30vh;
+    }
+
+    header > p {
+        width: 30%;
+    }
+
+    article {
+      height: 116vh;
+      width: 70%;
+    }
+    
+    section {
+        height: 50%;
+        width: 70%;
+    }
+    
+    a {
+        width: 24%;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .reduzir {
+        height: 80%;
+        width: 80%;
+        object-fit: cover;
+        object-position: left;
+    }
+} 
+/* desktops, telas grandes */
+
+@media (min-width: 1201px) {
+    header {
+        height: 30vh;
+    }
+
+    header > p {
+        width: 30%;
+    }
+
+    article {
+      height: 116vh;
+      width: 70%;
+    }
+    
+    section {
+        height: 50%;
+        width: 70%;
+    }
+    
+    a {
+        width: 24%;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .reduzir {
+        height: 80%;
+        width: 80%;
+        object-fit: cover;
+        object-position: left;
     }
 } 
   
